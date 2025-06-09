@@ -1,15 +1,32 @@
-# Бодлогo2-Extra Long Factorials
+# Бодлого 2 - Extra Long Factorials
 
-## Бодлогын өгүүлбэр
+## Бодлогын өгүүлбэр:
+- `n!` (factorial) гэдэг нь `n × (n-1) × (n-2) × ... × 2 × 1` гэсэн үржвэр юм. Танд `n` гэсэн бүхэл тоо өгөгдөнө. `n!`-ийг бодож хэвлэ.
 
-Өгөгдсөн `n` тооны факториал болох `n!`-ийг бодож хэвлэ.
+ - n нь ихээхэн том байж болох тул `long`, `int` гэх мэт төрлүүд багтахгүй. Тиймээс `BigInteger` (эсвэл Python-т бол шууд тоо) ашиглах шаардлагатай.
 
-Жишээлбэл, `n = 25` гэж өгвөл: `25! = 15511210043330985984000000`
+## Оролт:
+- 1 ≤ n ≤ 100
 
-## Холбоос:
-
-[HackerRank - Extra Long Factorials](https://www.hackerrank.com/challenges/extra-long-factorials)
+## Гаралт:
+- `n!` буюу n-ийн факториалын утгыг хэвлэнэ.
 
 ## Шийдэл:
 
-C++-д `int` эсвэл `long long` төрлүүд нь маш том факториалд хүрэлцдэггүй. Тиймээс бид string-р хадгалаад, нэг бүрчлэн үржиж том тоог хадгалах хэрэгтэй байдаг. Энэ нь BigInteger-ийн логикийн хувилбар юм.
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+BigInteger result = BigInteger.ONE;
+        for (int i = 2; i <= n; i++) {
+            result = result.multiply(BigInteger.valueOf(i));
+        }
+
+System.out.println(result);
+    }
+}
+
+
