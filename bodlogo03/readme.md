@@ -1,4 +1,4 @@
-# Бодлогo3-Non-Divisible Subset
+# Бодлогo3 - Non-Divisible Subset
 
 ## Бодлогын өгүүлбэр
 
