@@ -1,0 +1,28 @@
+# Ignore compiled class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore IntelliJ IDEA project files
+*.iml
+.idea/
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore build directories
+bin/
+build/
+out/
+target/
