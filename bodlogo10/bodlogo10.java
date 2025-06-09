@@ -1,3 +1,5 @@
+package bodlogo10;
+
 import java.io.*;
 import java.util.*;
 
@@ -44,7 +46,7 @@ class Result {
     }
 }
 
-public class Solution {
+public class bodlogo10 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("output.txt"));
